@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var A = [10,2,35,4,5,69,17,8,9,1]
+    var A = [12,2,35,4,5,69,17,87,9,1]
     var PhepNhan = [String]()
     var KetQua: [Int] = []
     var temp1 = 0 // bien tam cua mang so
