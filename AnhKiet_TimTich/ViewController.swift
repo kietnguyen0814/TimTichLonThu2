@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var A = [12,2,35,4,5,69,17,87,9,1]
-    var PhepNhan = [String]()
-    var KetQua: [Int] = []
+    var A = [12,2,35,4,5,69,17,87,9,1] // Mang cho truoc
+    var PhepNhan = [String]() // Mang chua Phep Toan
+    var KetQua: [Int] = [] // Mang chua Ket Qua
     var temp1 = 0 // bien tam cua mang so
     var temp2: String = "" // bien tam cua mang ky tu
     override func viewDidLoad() {
@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         //Thuc hien phép nhan khong trung
         for i in 0..<(A.count - 1) {
             for j  in i+1...(A.count - 1) {
-                KetQua.append(A[i] * A[j])
-                PhepNhan.append(String(A[i]) + "*" + String(A[j]))
+                KetQua.append(A[i] * A[j]) //Thuc hien nhan 2 so roi luu vao mang Ket Qua
+                PhepNhan.append(String(A[i]) + "*" + String(A[j])) // Luu phep tinh vao mang PhepNhan
             }
         }
         
