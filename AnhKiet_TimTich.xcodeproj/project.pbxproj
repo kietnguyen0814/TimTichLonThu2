@@ -14,6 +14,7 @@
 		2E3D7FD31F2F23F900EC1B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D7FD11F2F23F900EC1B2F /* LaunchScreen.storyboard */; };
 		2E3D7FDE1F2F23F900EC1B2F /* AnhKiet_TimTichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D7FDD1F2F23F900EC1B2F /* AnhKiet_TimTichTests.swift */; };
 		2E3D7FE91F2F23F900EC1B2F /* AnhKiet_TimTichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D7FE81F2F23F900EC1B2F /* AnhKiet_TimTichUITests.swift */; };
+		2E56490B1F3231CC00B5D33B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E56490A1F3231CC00B5D33B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2E3D7FE41F2F23F900EC1B2F /* AnhKiet_TimTichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnhKiet_TimTichUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3D7FE81F2F23F900EC1B2F /* AnhKiet_TimTichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnhKiet_TimTichUITests.swift; sourceTree = "<group>"; };
 		2E3D7FEA1F2F23F900EC1B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E56490A1F3231CC00B5D33B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				2E3D7FC81F2F23F900EC1B2F /* AppDelegate.swift */,
+				2E56490A1F3231CC00B5D33B /* Model.swift */,
 				2E3D7FCA1F2F23F900EC1B2F /* ViewController.swift */,
 				2E3D7FCC1F2F23F900EC1B2F /* Main.storyboard */,
 				2E3D7FCF1F2F23F900EC1B2F /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E56490B1F3231CC00B5D33B /* Model.swift in Sources */,
 				2E3D7FCB1F2F23F900EC1B2F /* ViewController.swift in Sources */,
 				2E3D7FC91F2F23F900EC1B2F /* AppDelegate.swift in Sources */,
 			);
@@ -507,6 +511,7 @@
 				2E3D7FEF1F2F23F900EC1B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E3D7FF01F2F23F900EC1B2F /* Build configuration list for PBXNativeTarget "AnhKiet_TimTichTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				2E3D7FF21F2F23F900EC1B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E3D7FF31F2F23F900EC1B2F /* Build configuration list for PBXNativeTarget "AnhKiet_TimTichUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				2E3D7FF51F2F23F900EC1B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

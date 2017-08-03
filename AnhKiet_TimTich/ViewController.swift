@@ -9,39 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var A = [12,2,35,4,5,69,17,87,9,1] // Mang cho truoc
-    var PhepNhan = [String]() // Mang chua Phep Toan
-    var KetQua: [Int] = [] // Mang chua Ket Qua
-    var temp1 = 0 // bien tam cua mang so
-    var temp2: String = "" // bien tam cua mang ky tu
+    var A = [1,2,9,6] // Mang cho truoc 5,69,17,87,9,1
+    var multiply: Tich!
+    var KetQua = [Tich]()
+    var max1 = 0 // tích lớn nhất trong mảng
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //Thuc hien phép nhan khong trung
+        //Thuc hien phep nhan khong trung
         for i in 0..<(A.count - 1) {
             for j  in i+1...(A.count - 1) {
+                /*
                 KetQua.append(A[i] * A[j]) //Thuc hien nhan 2 so roi luu vao mang Ket Qua
                 PhepNhan.append(String(A[i]) + "*" + String(A[j])) // Luu phep tinh vao mang PhepNhan
+                */
+                multiply = Tich(multi: "\(A[i]) * \(A[j])", result: A[i]*A[j])
+                KetQua.append(multiply)
             }
         }
         
-        // Sap Xep Giam Dan
-        for i in 0..<(KetQua.count-1) {
-            for j in i+1...(KetQua.count-1) {
-                if (KetQua[i] < KetQua[j]){
-                    //Sap Xep Mang So
-                    temp1 = KetQua[i]
-                    KetQua[i] = KetQua[j]
-                    KetQua[j] = temp1
-                    //Sap Xep Mang Ky Tu
-                    temp2 = PhepNhan[i]
-                    PhepNhan[i] = PhepNhan[j]
-                    PhepNhan[j] = temp2
-                }
-            }
-        }
+        //Co the su dung nhu the nay
+        /*let resultArray = KetQua.map({ (tich: Tich) -> Int in
+            tich.result
+        })*/
+        
+        //hoac
+        
+        let resultArray = KetQua.map { $0.result} // also works
+        max1 = resultArray.max()!
+        
+        let sortResult = resultArray.sorted{$0 > $1}.filter{$0 < max1}
+        print(resultArray)
+        print(sortResult)
+        print(sortResult[0])
 
-        print("Tích lớn thứ nhì là: ",PhepNhan[1], " = ", KetQua[1])
     }
 
     override func didReceiveMemoryWarning() {
